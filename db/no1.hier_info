@@ -1,5 +1,9 @@
-|no1
-A => u1.IN0
-Y <= u1.DB_MAX_OUTPUT_PORT_TYPE
+|no3
+A => S.IN0
+A => Co.IN0
+B => S.IN1
+B => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
 
 

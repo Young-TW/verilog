@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY MAX3000A
 set_global_assignment -name DEVICE "EPM3064ALC44-10"
-set_global_assignment -name TOP_LEVEL_ENTITY no1
+set_global_assignment -name TOP_LEVEL_ENTITY no3
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "08:32:22  MAY 27, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
@@ -48,3 +48,8 @@ set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name VERILOG_FILE no1.v
 set_global_assignment -name VECTOR_WAVEFORM_FILE no1.vwf
 set_global_assignment -name BDF_FILE no1.bdf
+set_global_assignment -name VERILOG_FILE no2.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE no2.vwf
+set_global_assignment -name VERILOG_FILE no3.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE no3.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE no3.vwf

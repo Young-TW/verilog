@@ -1,4 +1,4 @@
-module no1(A, Y);
+module no1(A,Y);
     input A;
     output reg Y;
     
@@ -8,11 +8,3 @@ module no1(A, Y);
     Y = ~A;
     end
 endmodule
-
-//module no2(A, B, Y);
-//    input A;
-//    input B;
-//    output Y;
-//    
-//    or u2(Y, A, B);
-//endmodule
