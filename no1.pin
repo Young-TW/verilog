@@ -103,7 +103,7 @@ GND                          : 36        : gnd    :                   :         
 RESERVED                     : 37        :        :                   :         :           :                
 TDO                          : 38        : output : 3.3-V LVTTL       :         :           : N              
 RESERVED                     : 39        :        :                   :         :           :                
-RESERVED                     : 40        :        :                   :         :           :                
+Cin                          : 40        : input  : 3.3-V LVTTL       :         :           : N              
 A                            : 41        : input  : 3.3-V LVTTL       :         :           : N              
 GND                          : 42        : gnd    :                   :         :           :                
 GND+                         : 43        :        :                   :         :           :                

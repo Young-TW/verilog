@@ -1,5 +1,5 @@
 Simulator report for no1
-Sat May 27 11:18:15 2023
+Sat May 27 11:25:34 2023
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -45,9 +45,9 @@ applicable agreement for further details.
 +-----------------------------+-----------------+
 ; Simulation Start Time       ; 0 ps            ;
 ; Simulation End Time         ; 4.0 ms          ;
-; Simulation Netlist Size     ; 6 nodes         ;
+; Simulation Netlist Size     ; 7 nodes         ;
 ; Simulation Coverage         ;     100.00 %    ;
-; Total Number of Transitions ; 66              ;
+; Total Number of Transitions ; 79              ;
 ; Simulation Breakpoints      ; 0               ;
 ; Family                      ; MAX3000A        ;
 ; Device                      ; EPM3064ALC44-10 ;
@@ -62,7 +62,7 @@ applicable agreement for further details.
 ; Simulation mode                                                                            ; Timing     ; Timing        ;
 ; Start time                                                                                 ; 0 ns       ; 0 ns          ;
 ; Simulation results format                                                                  ; CVWF       ;               ;
-; Vector input source                                                                        ; no3.vwf    ;               ;
+; Vector input source                                                                        ; no4.vwf    ;               ;
 ; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
 ; Check outputs                                                                              ; Off        ; Off           ;
 ; Report simulation coverage                                                                 ; On         ; On            ;
@@ -96,9 +96,9 @@ Please use Quartus II to view the waveform report data.
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
 ; Total coverage as a percentage                      ;     100.00 % ;
-; Total nodes checked                                 ; 6            ;
-; Total output ports checked                          ; 6            ;
-; Total output ports with complete 1/0-value coverage ; 6            ;
+; Total nodes checked                                 ; 7            ;
+; Total output ports checked                          ; 7            ;
+; Total output ports with complete 1/0-value coverage ; 7            ;
 ; Total output ports with no 1/0-value coverage       ; 0            ;
 ; Total output ports with no 1-value coverage         ; 0            ;
 ; Total output ports with no 0-value coverage         ; 0            ;
@@ -106,18 +106,19 @@ Please use Quartus II to view the waveform report data.
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+-------------------------------------------------+
-; Complete 1/0-Value Coverage                     ;
-+-----------+------------------+------------------+
-; Node Name ; Output Port Name ; Output Port Type ;
-+-----------+------------------+------------------+
-; |no3|S~1  ; |no3|S~1         ; dataout          ;
-; |no3|Co~2 ; |no3|Co~2        ; dataout          ;
-; |no3|A    ; |no3|A~corein    ; dataout          ;
-; |no3|B    ; |no3|B~corein    ; dataout          ;
-; |no3|S    ; |no3|S           ; padio            ;
-; |no3|Co   ; |no3|Co          ; padio            ;
-+-----------+------------------+------------------+
++----------------------------------------------------+
+; Complete 1/0-Value Coverage                        ;
++--------------+------------------+------------------+
+; Node Name    ; Output Port Name ; Output Port Type ;
++--------------+------------------+------------------+
+; |no4|Add0~5  ; |no4|Add0~5      ; dataout          ;
+; |no4|Add0~13 ; |no4|Add0~13     ; dataout          ;
+; |no4|A       ; |no4|A~corein    ; dataout          ;
+; |no4|B       ; |no4|B~corein    ; dataout          ;
+; |no4|Cin     ; |no4|Cin~corein  ; dataout          ;
+; |no4|S       ; |no4|S           ; padio            ;
+; |no4|Co      ; |no4|Co          ; padio            ;
++--------------+------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
@@ -149,17 +150,17 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Sat May 27 11:18:15 2023
+    Info: Processing started: Sat May 27 11:25:34 2023
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off no1 -c no1
-Info: Using vector source file "C:/Users/PTIVS/Desktop/913205/no3.vwf"
+Info: Using vector source file "C:/Users/PTIVS/Desktop/913205/no4.vwf"
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
 Info: Simulation coverage is     100.00 %
-Info: Number of transitions in simulation is 66
+Info: Number of transitions in simulation is 79
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 146 megabytes
-    Info: Processing ended: Sat May 27 11:18:15 2023
+    Info: Processing ended: Sat May 27 11:25:34 2023
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 

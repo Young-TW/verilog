@@ -1,5 +1,5 @@
 Classic Timing Analyzer report for no1
-Sat May 27 11:16:44 2023
+Sat May 27 11:24:01 2023
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -39,7 +39,7 @@ applicable agreement for further details.
 +------------------------------+-------+---------------+-------------+------+----+------------+----------+--------------+
 ; Type                         ; Slack ; Required Time ; Actual Time ; From ; To ; From Clock ; To Clock ; Failed Paths ;
 +------------------------------+-------+---------------+-------------+------+----+------------+----------+--------------+
-; Worst-case tpd               ; N/A   ; None          ; 10.000 ns   ; B    ; S  ; --         ; --       ; 0            ;
+; Worst-case tpd               ; N/A   ; None          ; 10.000 ns   ; Cin  ; S  ; --         ; --       ; 0            ;
 ; Total number of failed paths ;       ;               ;             ;      ;    ;            ;          ; 0            ;
 +------------------------------+-------+---------------+-------------+------+----+------------+----------+--------------+
 
@@ -96,8 +96,10 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------+-------------------+-----------------+------+----+
 ; N/A   ; None              ; 10.000 ns       ; A    ; Co ;
 ; N/A   ; None              ; 10.000 ns       ; B    ; Co ;
+; N/A   ; None              ; 10.000 ns       ; Cin  ; Co ;
 ; N/A   ; None              ; 10.000 ns       ; A    ; S  ;
 ; N/A   ; None              ; 10.000 ns       ; B    ; S  ;
+; N/A   ; None              ; 10.000 ns       ; Cin  ; S  ;
 +-------+-------------------+-----------------+------+----+
 
 
@@ -107,20 +109,20 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II Classic Timing Analyzer
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Sat May 27 11:16:44 2023
+    Info: Processing started: Sat May 27 11:24:01 2023
 Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off no1 -c no1
 Info: Started post-fitting delay annotation
 Info: Delay annotation completed successfully
 Warning: Timing Analysis does not support the analysis of latches as synchronous elements for the currently selected device family
 Info: Longest tpd from source pin "A" to destination pin "Co" is 10.000 ns
-    Info: 1: + IC(0.000 ns) + CELL(1.400 ns) = 1.400 ns; Loc. = PIN_41; Fanout = 2; PIN Node = 'A'
-    Info: 2: + IC(2.300 ns) + CELL(4.500 ns) = 8.200 ns; Loc. = LC3; Fanout = 1; COMB Node = 'Co~2'
+    Info: 1: + IC(0.000 ns) + CELL(1.400 ns) = 1.400 ns; Loc. = PIN_41; Fanout = 3; PIN Node = 'A'
+    Info: 2: + IC(2.300 ns) + CELL(4.500 ns) = 8.200 ns; Loc. = LC3; Fanout = 1; COMB Node = 'Add0~13'
     Info: 3: + IC(0.000 ns) + CELL(1.800 ns) = 10.000 ns; Loc. = PIN_11; Fanout = 0; PIN Node = 'Co'
     Info: Total cell delay = 7.700 ns ( 77.00 % )
     Info: Total interconnect delay = 2.300 ns ( 23.00 % )
 Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 170 megabytes
-    Info: Processing ended: Sat May 27 11:16:44 2023
+    Info: Processing ended: Sat May 27 11:24:01 2023
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 

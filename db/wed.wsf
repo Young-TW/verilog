@@ -145,7 +145,7 @@ VECTOR("C:/Users/PTIVS/Desktop/913205/db/no1.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Co";
+		SIGNAL = "Cin";
 		INDEX = 2;
 		FORMAT = E;
 		SCALE = 1;
@@ -153,8 +153,16 @@ VECTOR("C:/Users/PTIVS/Desktop/913205/db/no1.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "S";
+		SIGNAL = "Co";
 		INDEX = 3;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "S";
+		INDEX = 4;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;

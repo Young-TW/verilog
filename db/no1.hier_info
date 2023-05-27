@@ -1,9 +1,8 @@
-|no3
-A => S.IN0
-A => Co.IN0
-B => S.IN1
-B => Co.IN1
-S <= S.DB_MAX_OUTPUT_PORT_TYPE
-Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+|no4
+A => Add0.IN1
+B => Add0.IN2
+Cin => Add1.IN4
+S <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Add1.DB_MAX_OUTPUT_PORT_TYPE
 
 
